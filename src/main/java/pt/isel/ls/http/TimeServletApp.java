@@ -35,7 +35,8 @@ public class TimeServletApp {
         server.start();
 
         log.info("server started listening on port {}", port);
-        server.join();
+        System.in.read();
+        server.stop();
 
         log.info("main is ending");
     }
